@@ -1,7 +1,7 @@
 # Install dependencies
 FROM ubuntu:22.04
 RUN apt-get update; apt-get install -y wget python3-pip 
-RUN pip3 install jupyterlab==3.4.5 numpy scipy pandas matplotlib seaborn
+RUN pip3 install jupyterlab==3.4.5 numpy scipy pandas matplotlib seaborn torch
 
 # Set the working directory in the container
 WORKDIR /app

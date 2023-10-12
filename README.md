@@ -7,4 +7,5 @@ Open the notebook to [View the Exploratory Data Analysis Notebook](./notebook/pl
 
 
 ## Run Dockerized Apps:
-TODO
+docker build . -t jupyter_server
+docker run -it -p 8080:8080 jupyter_server
